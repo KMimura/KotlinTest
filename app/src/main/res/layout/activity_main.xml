@@ -30,6 +30,7 @@
         android:layout_marginTop="192dp"
         android:ems="10"
         android:inputType="textPersonName"
+        android:onClick="sendMessage"
         android:text="@string/strings"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
