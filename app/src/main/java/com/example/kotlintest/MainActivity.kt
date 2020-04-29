@@ -14,11 +14,16 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
     }
 
-    fun sendMessage(view:View){
-        val intent: Intent = Intent(this@MainActivity, DisplayMessageActivity::class.java)
-        val editText: EditText = findViewById(R.id.editText)
-        val message: String = editText.text.toString()
-        intent.putExtra(EXTRA_MESSAGE, message)
+//    fun sendMessage(view:View){
+//        val intent: Intent = Intent(this@MainActivity, DisplayMessageActivity::class.java)
+//        val editText: EditText = findViewById(R.id.editText)
+//        val message: String = editText.text.toString()
+//        intent.putExtra(EXTRA_MESSAGE, message)
+//        startActivity(intent)
+//    }
+
+    fun goToCalculator(view:View) {
+        val intent: Intent = Intent(this@MainActivity, CalculatorActivity::class.java)
         startActivity(intent)
     }
 }

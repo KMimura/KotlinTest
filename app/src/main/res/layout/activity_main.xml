@@ -6,32 +6,20 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <Button
-        android:id="@+id/s-button"
-        android:layout_width="188dp"
-        android:layout_height="67dp"
-        android:layout_marginBottom="248dp"
-        android:text="@string/button"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent" />
-
     <androidx.constraintlayout.widget.Barrier
         android:id="@+id/barrier"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:barrierDirection="left" />
 
-    <EditText
-        android:id="@+id/editText"
+    <Button
+        android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="192dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:onClick="sendMessage"
-        android:text="@string/strings"
+        android:layout_marginBottom="236dp"
+        android:onClick="goToCalculator"
+        android:text="@string/calcButton"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
